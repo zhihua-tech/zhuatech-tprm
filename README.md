@@ -1,5 +1,7 @@
 # ZhuaTech Tprm｜知华科技第三方风险管理 TPRM
 
+[简体中文](README.md) | [English](README.en.md)
+
 > 从准入到退出持续识别第三方带来的业务与合规风险
 
 [![Java 21](https://img.shields.io/badge/Java-21-7a4d24)](backend/pom.xml)
