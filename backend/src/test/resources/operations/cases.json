@@ -1,0 +1,56 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "privilegedMfaPct": "#100",
+      "daysToReview": "#30"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "protectedPrivileged": "2"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "reviewDue": "2026-10-30"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "reviewDue": "2026-10-22"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "privileged": "11"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "privileged": "0",
+      "protectedPrivileged": "0"
+    },
+    "expected": {
+      "decision": "PASS",
+      "privilegedMfaPct": "#100"
+    },
+    "error": false
+  }
+]
